@@ -19,12 +19,12 @@ public static void  main(String []arg){
 		
 		myA.printMessage(myA.endStr);
 }//main Method
-private void printMessage(String str)
+private static void printMessage(String str)
 {
 	System.out.println(str);
 }
 ////////////////////////////////
-class Square {
+ class Square {
 	public Square(int init_x){x=init_x;}
 	public int computeSurface(){return x**x;}
 	public int computePerimeter(){return 4*x;}
