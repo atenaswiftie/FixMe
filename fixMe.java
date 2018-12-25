@@ -4,19 +4,19 @@ import java.awt.*;
 public class MyApplication {
 static final String startStr="\n****start of the program****";
 final String endStr="\n****end of the program****";
-public void main(String []arg){
+public static void  main(String []arg){
 		printMessage(startStr);
 		Square s=new Square(100);
 		System.out.println(s.computePerimeter());
 		System.out.println(s.computeSurface());
 		Point p1=new Point(10,10);
-		Point p2=new Point(10.1,10.2);
+		Point p2=new Point(10,10);
 		ColorPoint cp1=new ColorPoint(1,1);
-		ColorPoint cp2=new ColorPoint(1,1,new Color(12,34,56));
-		cp1=p1;
+		
+		
 		p1=cp1;
 	MyApplication myA=new MyApplication();
-		myA.printMessage(endStr);
+		
 		myA.printMessage(myA.endStr);
 }//main Method
 private void printMessage(String str)
